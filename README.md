@@ -11,6 +11,11 @@ identically on both PFA Engine runtimes:
 
 This repository hosts **releases and the public issue tracker** for PFA Studio.
 
+## Documentation
+
+- **User manual** — https://pitchfoxaudio.github.io/docs/ (also available
+  there as a single PDF)
+
 ## Download
 
 The beta has not started yet — builds will appear under
