@@ -11,8 +11,8 @@ No upstream source is modified. The kit itself (the script and its two
 helpers) is released under the MIT License; the binaries it produces are
 LGPL-2.1-or-later, as the notice inside the app says.
 
-Two binaries, **both committed**, both built by the same script from the same
-sha256-pinned tarballs:
+Two binaries, both built by the same script from the same sha256-pinned
+tarballs. They ship inside the app; they are not part of this kit:
 
 | file | target | built |
 |---|---|---|
@@ -30,9 +30,9 @@ both binaries here keeps the notice's single FFmpeg paragraph true on both
 platforms with no extra licence texts, and keeps the Windows binary at about
 30 MB.
 
-The binaries are kept under version control for the same reason: a document
-that describes the shipped binary can only be checked if the shipped binary
-is the one the build was made from.
+This folder is the source route the LGPL asks for, not a second copy of
+the binaries: the shipped binary is the one inside the app, and the build
+checks compare it with the build it was made from.
 
 ## Requirements for the binary
 
