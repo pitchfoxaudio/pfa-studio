@@ -4,7 +4,7 @@
 editor for building adaptive music and SFX for games. You author events,
 tracks, variations, transitions, node graphs, spatial settings and reverb
 zones, then export a single `config.json` (+ audio) that plays back
-identically on both PFA Engine runtimes:
+on both PFA Engine runtimes:
 
 - [pfa-engine-js](https://github.com/pitchfoxaudio/pfa-engine-js) — web games (Web Audio API, MIT)
 - [pfa-engine-godot](https://github.com/pitchfoxaudio/pfa-engine-godot) — Godot 4 addon (MIT)
