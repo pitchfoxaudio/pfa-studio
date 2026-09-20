@@ -11,38 +11,71 @@ on both PFA Engine runtimes:
 
 This repository hosts **releases and the public issue tracker** for PFA Studio.
 
-## Documentation
-
-- **User manual** — https://pitchfoxaudio.github.io/docs/ (also available
-  there as a single PDF)
-
 ## Download
 
-The beta has not started yet — builds will appear under
-[Releases](../../releases). Join the beta list at
-[pitchfoxaudio.com/pfa-studio](https://pitchfoxaudio.com/pfa-studio).
+Builds are published under [Releases](../../releases/latest). Each release
+carries one file per platform:
 
-PFA Studio is free to download and use during the beta.
+| Platform | File |
+|---|---|
+| macOS, Apple Silicon (arm64) | `PFA-Studio-<version>-b<build>.zip` |
+| Windows 10 / 11, 64-bit | `PFA-Studio-Setup-<version>-b<build>-win64.exe` |
 
-## Requirements
-
-- macOS, Apple Silicon (arm64). A Windows build is planned after the beta.
+PFA Studio is in public beta and **free to download and use during the beta,
+commercial projects included**. The full terms are the Beta License (EULA):
+it is shown on first launch and stays one click away under
+**Help → Beta License (EULA)**.
 
 ## First launch on macOS
 
-Beta builds are ad-hoc signed (no Apple Developer ID yet), so Gatekeeper
-flags the downloaded app. This is expected — first launch:
+Beta builds are ad-hoc signed (no Apple Developer ID yet), so macOS treats
+the downloaded app as unverified.
 
 1. Unzip.
 2. Move `PFA Studio.app` to Applications (optional — it runs from anywhere).
-3. **Right-click (Ctrl-click) the app → Open → Open.**
-   A plain double-click shows "cannot be opened" — the right-click route
-   offers the Open button. Needed once; afterwards it opens normally.
+3. Double-click to launch. If macOS refuses ("cannot be opened" /
+   "unverified developer"), **right-click (Ctrl-click) the app → Open →
+   Open** once; afterwards it opens normally. On newer macOS the Open
+   button may not appear — then allow it under **System Settings →
+   Privacy & Security → Open Anyway**.
 
 Terminal alternative:
 `xattr -dr com.apple.quarantine "/Applications/PFA Studio.app"`
 
+## First launch on Windows
+
+1. Download and run `PFA-Studio-Setup-<version>-b<build>-win64.exe`. It
+   installs for the current user (no administrator rights needed) and
+   associates `.pfa` project files on the way.
+2. Launch **PFA Studio** from the Start Menu. Beta builds are not
+   code-signed, so SmartScreen may show "Windows protected your PC" —
+   choose **More info → Run anyway** once.
+
+## Documentation
+
+- **User manual** — https://pitchfoxaudio.github.io/docs/ (the same manual
+  ships inside the app: **Help → Manual (PDF)**)
+
+## Updates
+
+Once a day, on launch, the app asks this repository's Releases feed whether a
+newer version is out and shows the release notes when one is. It is a plain
+anonymous HTTPS request; nothing is downloaded or installed automatically,
+and the check can be turned off in the app (**⚙ → Info**).
+
+## Bundled FFmpeg (LGPL)
+
+The app bundles FFmpeg binaries built under the LGPL. The complete build kit
+for those exact binaries — the source route the in-app notice names — lives
+in [`ffmpeg/`](ffmpeg/). All third-party license texts ship inside the app
+(**Help → Third-Party Licenses**).
+
 ## Reporting bugs
 
-Open an [issue](../../issues) — include your macOS version, what you did,
-what you expected, and the crash log from `~/Library/Logs/PFA Studio/` if any.
+Open an [issue](../../issues), or write to info@pitchfoxaudio.com —
+**Help → Report a Bug…** in the app shows the address together with the build
+line to paste. Include your OS version, what you did and what you expected,
+and the crash log if there is one:
+
+- macOS: `~/Library/Logs/PFA Studio/crash_log.txt`
+- Windows: `%LOCALAPPDATA%\PFA Studio\Logs\crash_log.txt`
