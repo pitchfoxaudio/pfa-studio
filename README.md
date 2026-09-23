@@ -19,7 +19,9 @@ carries one file per platform:
 | Platform | File |
 |---|---|
 | macOS, Apple Silicon (arm64) | `PFA-Studio-<version>-b<build>.zip` |
-| Windows 10 / 11, 64-bit | `PFA-Studio-Setup-<version>-b<build>-win64.exe` |
+| Windows, 64-bit | `PFA-Studio-Setup-<version>-b<build>-win64.exe` |
+
+Tested on macOS 26 (Tahoe) on Apple Silicon and on Windows 10 (22H2).
 
 PFA Studio is in public beta and **free to download and use during the beta,
 commercial projects included**. The full terms are the Beta License (EULA):
