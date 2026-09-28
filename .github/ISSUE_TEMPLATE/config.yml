@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: Questions and help
     url: https://discord.gg/bxSRupPCPS
-    about: Ask in #help on the PitchFox Audio Discord.
+    about: "Ask in #help on the PitchFox Audio Discord."
   - name: Ideas and feature requests
     url: https://discord.gg/bxSRupPCPS
-    about: Post them in #feedback on the PitchFox Audio Discord.
+    about: "Post them in #feedback on the PitchFox Audio Discord."
