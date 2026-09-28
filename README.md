@@ -58,6 +58,11 @@ Terminal alternative:
 - **User manual** — https://pitchfoxaudio.github.io/docs/ (the same manual
   ships inside the app: **Help → Manual (PDF)**)
 
+## Community
+
+Questions, bug reports and ideas are welcome on the PitchFox Audio Discord:
+https://discord.gg/bxSRupPCPS
+
 ## Updates
 
 Once a day, on launch, the app asks this repository's Releases feed whether a
@@ -74,10 +79,12 @@ in [`ffmpeg/`](ffmpeg/). All third-party license texts ship inside the app
 
 ## Reporting bugs
 
-Open an [issue](../../issues), or write to info@pitchfoxaudio.com —
-**Help → Report a Bug…** in the app shows the address together with the build
-line to paste. Include your OS version, what you did and what you expected,
-and the crash log if there is one:
+Post in **#bug-reports** on [Discord](https://discord.gg/bxSRupPCPS), open an
+[issue](../../issues), or write to info@pitchfoxaudio.com (the place for
+project files you can't share publicly) — **Help → Report a Bug…** in the app
+shows the address together with the build line to paste. Include your OS
+version, what you did and what you expected, and the crash log if there is
+one:
 
 - macOS: `~/Library/Logs/PFA Studio/crash_log.txt`
 - Windows: `%LOCALAPPDATA%\PFA Studio\Logs\crash_log.txt`
