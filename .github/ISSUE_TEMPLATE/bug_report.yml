@@ -1,0 +1,50 @@
+name: Bug report
+description: Something in PFA Studio doesn't work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! One bug per issue, please, and search first: if it's already here, add your details there.
+        Project files with audio you can't share publicly: send them to info@pitchfoxaudio.com instead.
+  - type: input
+    id: build
+    attributes:
+      label: Build line
+      description: "In PFA Studio: Help → Report a Bug… and copy the gray line (version, build and OS)."
+      placeholder: "PFA Studio 0.9.1 (build …) Beta · macOS-… (arm64)"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      description: Steps to reproduce, as exactly as you can.
+      placeholder: |
+        1. Open …
+        2. Click …
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: textarea
+    id: crash
+    attributes:
+      label: Crash log
+      description: |
+        If the app crashed, drag crash_log.txt here:
+        - macOS: `~/Library/Logs/PFA Studio/crash_log.txt`
+        - Windows: `%LOCALAPPDATA%\PFA Studio\Logs\crash_log.txt`
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots or a short video help a lot.
