@@ -57,6 +57,12 @@ Terminal alternative:
    code-signed, so SmartScreen may show "Windows protected your PC" —
    choose **More info → Run anyway** once.
 
+On Windows 11 with **Smart App Control** on, Windows blocks unsigned
+installers and has no way to allow a single app. Installing means turning it
+off under **Windows Security → App & browser control → Smart App Control
+settings**; recent Windows updates let you turn it back on later without
+reinstalling Windows.
+
 ## Documentation
 
 - **User manual** — https://pitchfoxaudio.github.io/docs/ (the same manual
