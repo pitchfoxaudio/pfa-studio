@@ -43,7 +43,8 @@ the downloaded app as unverified.
 5. macOS asks once more — **Open "PFA Studio"?** — click **Open Anyway**
    (and confirm with your password or Touch ID if asked).
 
-This is needed once; afterwards the app opens normally.
+This is needed once per build — a new version asks again; afterwards it
+opens normally.
 
 Terminal alternative:
 `xattr -dr com.apple.quarantine "/Applications/PFA Studio.app"`
