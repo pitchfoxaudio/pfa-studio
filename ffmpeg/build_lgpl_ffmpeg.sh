@@ -129,7 +129,7 @@ done
 
 log_target
 if [ "$TARGET" = macos ]; then
-    export MACOSX_DEPLOYMENT_TARGET=12.0  # the app's minimum macOS version
+    export MACOSX_DEPLOYMENT_TARGET=12.0  # at or below the app's minimum macOS version
 fi
 
 log "libogg $OGG_VER"
