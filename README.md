@@ -35,11 +35,15 @@ the downloaded app as unverified.
 
 1. Unzip.
 2. Move `PFA Studio.app` to Applications (optional — it runs from anywhere).
-3. Double-click to launch. If macOS refuses ("cannot be opened" /
-   "unverified developer"), **right-click (Ctrl-click) the app → Open →
-   Open** once; afterwards it opens normally. On newer macOS the Open
-   button may not appear — then allow it under **System Settings →
-   Privacy & Security → Open Anyway**.
+3. Double-click to launch. The first time, macOS stops the app with
+   **"PFA Studio" Not Opened** — click **Done** (not Move to Bin).
+4. Open **System Settings → Privacy & Security** and scroll to
+   **Security**: next to *"PFA Studio" was blocked to protect your Mac*,
+   click **Open Anyway**.
+5. macOS asks once more — **Open "PFA Studio"?** — click **Open Anyway**
+   (and confirm with your password or Touch ID if asked).
+
+This is needed once; afterwards the app opens normally.
 
 Terminal alternative:
 `xattr -dr com.apple.quarantine "/Applications/PFA Studio.app"`
