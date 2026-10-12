@@ -69,6 +69,16 @@ reinstalling Windows.
 - **User manual** — https://pitchfoxaudio.github.io/docs/ (the same manual
   ships inside the app: **Help → Manual (PDF)**)
 
+## Demos
+
+Four small web games whose sound was authored in PFA Studio and is played by
+pfa-engine-js — they run in the browser, nothing to install:
+
+- [Footsteps](https://pfa-demo-footsteps.netlify.app) — footsteps that change with the surface underfoot
+- [Fox Run](https://pfa-demo-fox-run.netlify.app) — adaptive music that follows the run
+- [3D Room](https://pfa-demo-3d-room.netlify.app) — spatial attenuation and reverb zones
+- [Billiards](https://pfa-demo-billiards.netlify.app) — impact sounds that follow how hard the balls hit
+
 ## Community
 
 Questions, bug reports and ideas are welcome on the PitchFox Audio Discord:
