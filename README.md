@@ -7,7 +7,7 @@ zones, then export a single `config.json` (+ audio) that plays back
 on both PFA Engine runtimes:
 
 - [pfa-engine-js](https://github.com/pitchfoxaudio/pfa-engine-js) — web games (Web Audio API, MIT)
-- [pfa-engine-godot](https://github.com/pitchfoxaudio/pfa-engine-godot) — Godot 4 addon (MIT)
+- [pfa-engine-godot](https://github.com/pitchfoxaudio/pfa-engine-godot) — Godot 4 addon (MIT), also on the [Godot Asset Store](https://store.godotengine.org/asset/pitchfoxaudio/pfa-engine/)
 
 This repository hosts **releases and the public issue tracker** for PFA Studio.
 
